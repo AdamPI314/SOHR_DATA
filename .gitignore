@@ -3,6 +3,8 @@
 
 # But not these files...
 # SOHR input files
+!input
+input/*
 !input/cmd.cfg
 
 !input/setting.json
@@ -33,12 +35,16 @@
 
 
 # SOHR output files
+!output
+output/*
 !output/time_dlsode_M.csv
 !output/temperature_dlsode_M.csv
 !output/pressure_dlsode_M.csv
 !output/concentration_dlsode_M.csv
 !output/drc_dlsode_M.csv
-!output/reaction_rate_dlsode_M.csv
+# split into two files, merge manually
+!output/reaction_rate_dlsode_M_1.csv
+!output/reaction_rate_dlsode_M_2.csv
 
 # etc...
 
