@@ -278,5 +278,57 @@ def get_chattering_species(atom_followed="C"):
     return chattering_species
 
 
+def get_s_a_setting():
+    """
+    return sensitivity analysis parametes
+    """
+    setting = {
+        # number of runs, number of smaples
+        "n_run": 5000,
+        # timeout in seconds, if a single mc run longer than this time, terminate it
+        "timeout": 300,
+        # space dimensionality
+        "n_dim": 8,
+        # indices that not will not be sampled, either be None, [] or like [0, 2]
+        "exclude": [0, 2],
+        # parameters used in least square regression
+        # number of variables, equals n_dim - len(exclude)
+        "N_variable": 8,
+        "Nth_order_1st": 2,
+        "Nth_order_2nd": 2,
+
+        # parameters used in mc sampling
+        "default_uncertainty": 100.0,
+        "init_temp": 1000,
+        "critical_temp": 1100,
+        "end_temp": 1900,
+        "target_temp": 1800,
+
+        # species index and concentration, as a nominal initial condition
+        "spe_idx_conc": {
+            # nominal concentration at time 1.0e-6 seconds
+            # "0": 2.25322798606747418e-05,
+            # "1": 7.63825332182982599e-15,
+            # "2": 4.50645598014366927e-05,
+            # "3": 6.55158764564955641e-17,
+            # "4": 4.73285585690103025e-15,
+            # "5": 9.79463390354316802e-17,
+            # "6": 5.45404278306276878e-14,
+            # "7": 5.28510891691534245e-16
+            # nominal concentration at time 1.0e-5 seconds
+            "0": 2.25322792340927307e-05,
+            "1": 1.06745743007354256e-13,
+            "2": 4.50645594093571151e-05,
+            "3": 8.72629092217001897e-15,
+            "4": 4.96216242705939368e-15,
+            "5": 1.92864677174077298e-16,
+            "6": 6.22838831591819596e-13,
+            "7": 5.71763673264164999e-16
+        }
+    }
+
+    return setting
+
+
 if __name__ == '__main__':
     get_chattering_species("HA2")
