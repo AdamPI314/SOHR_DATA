@@ -10,7 +10,7 @@
         "merge_chatterings": "yes"
     },
     "job": {
-        "job_type": "INITIATION"
+        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -24,7 +24,7 @@
         "max_time": 0.779074999626781,
         "critical_time": 0.7519999998807062,
         "sys_min_time": 1e-11,
-        "tau": 0.777655955130997
+        "tau": 0.777660157519
     },
     "chem_init": {
         "pressure_atm": 9.86923,
@@ -65,15 +65,15 @@
         "number_of_Ks": 3
     },
     "pathway": {
-        "init_spe": 60,
-        "atom_followed": "HA3",
+        "init_spe": 62,
+        "atom_followed": "C",
         "super_atom": "X",
         "begin_t": 0.0,
-        "end_t": 1.001,
+        "end_t": 0.25718313951098054,
         "topN": [
             500
         ],
-        "trajectoryNumber": 10000,
+        "trajectoryNumber": 10000000,
         "trajectoryNumberVector": [
             1000,
             1000,
@@ -119,6 +119,10 @@
             "9": [
                 39,
                 50
+            ],
+            "10": [
+                25,
+                27
             ]
         },
         "non_zero_rate_reaction": [],

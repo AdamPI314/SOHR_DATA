@@ -39,28 +39,27 @@ def get_local_settings():
         "begin_t": 0.0,
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
-        "end_t": 1.001,
-        # "end_t": 0.9,
+        "end_t": 0.25718313951098054,
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
-        "spe_oriented": False,
+        "spe_oriented": True,
         # condense species path, no reactions
         "species_path": False,
         # atom followed
-        "atom_f": "HA3",
-        "init_s": 60,
+        "atom_f": "C",
+        "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # end species index, either None, or [] or [14, 15]
         "end_s_idx": [],
         # top n path
-        "top_n_p": 500,
+        "top_n_p": 5000,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 10,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1000000,
+        "mc_n_traj": 10000000,
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
