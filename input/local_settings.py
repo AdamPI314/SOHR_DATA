@@ -29,7 +29,10 @@ def get_local_settings():
         "traj_critical_t": 0.751999999880706205,
         # reference time, to a combustion system, this is gonna be the ignition delay time
         # for Propane, time when temperature=1800K
-        "tau": 0.777655955130997,
+        # "tau": 0.777655955130997,
+        # time at which the first order differential/gradient of temperature is maximized
+        # check routine get_time_at_time_differential_maximum from trajectory.py
+        "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
         "mc_t": 0.25718313951098054,
         # beginning time, for pathway or for trajectory, exact time = begin_t*tau
