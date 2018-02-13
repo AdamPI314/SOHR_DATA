@@ -63,7 +63,7 @@ def get_local_settings():
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
-        "pi_n_time": 50,
+        "pi_n_time": 25,
         # tag, M or fraction
         "tag": "M"
     }

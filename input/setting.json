@@ -71,9 +71,9 @@
         "begin_t": 0.0,
         "end_t": 0.25718313951098054,
         "topN": [
-            500
+            50000
         ],
-        "trajectoryNumber": 10000000,
+        "trajectoryNumber": 1000,
         "trajectoryNumberVector": [
             1000,
             1000,
