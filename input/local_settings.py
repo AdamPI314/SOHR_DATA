@@ -51,7 +51,7 @@ def get_local_settings():
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # end species index, either None, or [] or [14, 15]
-        "end_s_idx": [],
+        "end_s_idx": [59, 17, 14],
         # top n path
         "top_n_p": 5000,
         # top n path for gephi to generate coordinates
@@ -94,21 +94,6 @@ def get_chattering_species(atom_followed="C"):
             }
         },
 
-        # 1096    565     O2+ipropyl=ipropyloo
-        # reactants       9       O2      61      ipropyl products        80      ipropyloo
-        # 1097    -565    O2+ipropyl=ipropyloo
-        {
-            "rxn": [1096, 1097],
-            "spe": {
-                "H": [61, 80],
-                "O": [80, 9],
-                "C": [61, 80],
-                "HA1": [61, 80],
-                "HA2": [61, 80],
-                "HA3": [61, 80],
-                "HA4": [61, 80]
-            }
-        },
 
         # 1116    575     O2+QOOH_1=well_1
         # reactants       9       O2      87      QOOH_1  products        90      well_1
@@ -141,98 +126,114 @@ def get_chattering_species(atom_followed="C"):
             }
         },
 
-        # 1124	579	O2 + QOOH_2 = well_2
-        # reactants	9	O2	88	QOOH_2	products	91	well_2
-        # net_reactants	9	O2	88	QOOH_2	net_products	91	well_2
+        # 1096    565     O2+ipropyl=ipropyloo
+        # reactants       9       O2      61      ipropyl products        80      ipropyloo
+        # 1097    -565    O2+ipropyl=ipropyloo
         {
-            "rxn": [1124, 1125],
+            "rxn": [1096, 1097],
             "spe": {
-                "H": [88, 91],
-                "C": [88, 91],
-                "HA1": [88, 91],
-                "HA2": [88, 91],
-                "HA3": [88, 91],
-                "HA4": [88, 91]
-            }
-        },
-
-        # 1146	590	O2 + QOOH_3 = well_3
-        # reactants	9	O2	89	QOOH_3	products	92	well_3
-        # net_reactants	9	O2	89	QOOH_3	net_products	92	well_3
-        {
-            "rxn": [1146, 1147],
-            "spe": {
-                "H": [89, 92],
-                "C": [89, 92],
-                "HA1": [89, 92],
-                "HA2": [89, 92],
-                "HA3": [89, 92],
-                "HA4": [89, 92]
-            }
-        },
-
-        # 1214	624	prod_1=frag_1+OH
-        # reactants	94	prod_1	products	10	OH	101	frag_1
-        # net_reactants	94	prod_1	net_products	10	OH	101	frag_1
-        {
-            "rxn": [1214, 1215],
-            "spe": {
-                "H": [94, 101],
-                "C": [94, 101],
-                "HA1": [94, 101],
-                "HA2": [94, 101],
-                "HA3": [94, 101],
-                "HA4": [94, 101]
-            }
-        },
-
-        # 1042    536     allyloxy=vinoxylmethyl
-        # reactants       72      allyloxy        products        108     vinoxylmethyl
-        # 1043    -536    allyloxy=vinoxylmethyl
-        {
-            "rxn": [1042, 1043],
-            "spe": {
-                "H": [72, 108],
-                "C": [72, 108],
-                "O": [72, 108],
-                "HA1": [72, 108],
-                "HA2": [72, 108],
-                "HA3": [72, 108],
-                "HA4": [72, 108]
-            }
-        },
-
-        # 348     180     C2H5+O2=CH3CH2OO
-        # reactants       39      C2H5    9       O2      products        50      CH3CH2OO
-        # 349     -180    C2H5+O2=CH3CH2OO
-        {
-            "rxn": [348, 349],
-            "spe": {
-                "H": [39, 50],
-                "C": [39, 50],
-                "O": [9, 50],
-                "HA1": [39, 50],
-                "HA2": [39, 50],
-                "HA3": [39, 50],
-                "HA4": [39, 50]
-            }
-        },
-
-        # 132     69      CH3+O2(+M)=CH3OO(+M)
-        # reactants       25      CH3     9       O2      products        27      CH3OO
-        # 133     -69     CH3+O2(+M)=CH3OO(+M)
-        {
-            "rxn": [132, 133],
-            "spe": {
-                "H": [25, 27],
-                "C": [25, 27],
-                "O": [25, 27],
-                "HA1": [25, 27],
-                "HA2": [25, 27],
-                "HA3": [25, 27],
-                "HA4": [25, 27]
+                "H": [61, 80],
+                "O": [80, 9],
+                "C": [61, 80],
+                "HA1": [61, 80],
+                "HA2": [61, 80],
+                "HA3": [61, 80],
+                "HA4": [61, 80]
             }
         }
+
+        # # 1124	579	O2 + QOOH_2 = well_2
+        # # reactants	9	O2	88	QOOH_2	products	91	well_2
+        # # net_reactants	9	O2	88	QOOH_2	net_products	91	well_2
+        # {
+        #     "rxn": [1124, 1125],
+        #     "spe": {
+        #         "H": [88, 91],
+        #         "C": [88, 91],
+        #         "HA1": [88, 91],
+        #         "HA2": [88, 91],
+        #         "HA3": [88, 91],
+        #         "HA4": [88, 91]
+        #     }
+        # },
+
+        # # 1146	590	O2 + QOOH_3 = well_3
+        # # reactants	9	O2	89	QOOH_3	products	92	well_3
+        # # net_reactants	9	O2	89	QOOH_3	net_products	92	well_3
+        # {
+        #     "rxn": [1146, 1147],
+        #     "spe": {
+        #         "H": [89, 92],
+        #         "C": [89, 92],
+        #         "HA1": [89, 92],
+        #         "HA2": [89, 92],
+        #         "HA3": [89, 92],
+        #         "HA4": [89, 92]
+        #     }
+        # },
+
+        # # 1214	624	prod_1=frag_1+OH
+        # # reactants	94	prod_1	products	10	OH	101	frag_1
+        # # net_reactants	94	prod_1	net_products	10	OH	101	frag_1
+        # {
+        #     "rxn": [1214, 1215],
+        #     "spe": {
+        #         "H": [94, 101],
+        #         "C": [94, 101],
+        #         "HA1": [94, 101],
+        #         "HA2": [94, 101],
+        #         "HA3": [94, 101],
+        #         "HA4": [94, 101]
+        #     }
+        # },
+
+        # # 1042    536     allyloxy=vinoxylmethyl
+        # # reactants       72      allyloxy        products        108     vinoxylmethyl
+        # # 1043    -536    allyloxy=vinoxylmethyl
+        # {
+        #     "rxn": [1042, 1043],
+        #     "spe": {
+        #         "H": [72, 108],
+        #         "C": [72, 108],
+        #         "O": [72, 108],
+        #         "HA1": [72, 108],
+        #         "HA2": [72, 108],
+        #         "HA3": [72, 108],
+        #         "HA4": [72, 108]
+        #     }
+        # },
+
+        # # 348     180     C2H5+O2=CH3CH2OO
+        # # reactants       39      C2H5    9       O2      products        50      CH3CH2OO
+        # # 349     -180    C2H5+O2=CH3CH2OO
+        # {
+        #     "rxn": [348, 349],
+        #     "spe": {
+        #         "H": [39, 50],
+        #         "C": [39, 50],
+        #         "O": [9, 50],
+        #         "HA1": [39, 50],
+        #         "HA2": [39, 50],
+        #         "HA3": [39, 50],
+        #         "HA4": [39, 50]
+        #     }
+        # },
+
+        # # 132     69      CH3+O2(+M)=CH3OO(+M)
+        # # reactants       25      CH3     9       O2      products        27      CH3OO
+        # # 133     -69     CH3+O2(+M)=CH3OO(+M)
+        # {
+        #     "rxn": [132, 133],
+        #     "spe": {
+        #         "H": [25, 27],
+        #         "C": [25, 27],
+        #         "O": [25, 27],
+        #         "HA1": [25, 27],
+        #         "HA2": [25, 27],
+        #         "HA3": [25, 27],
+        #         "HA4": [25, 27]
+        #     }
+        # },
 
         # # 586     300     O2C2H4OH=CH2CH2OH+O2
         # # reactants       85      O2C2H4OH        products        54      CH2CH2OH        9       O2
