@@ -14,7 +14,7 @@ def get_local_settings():
             "initializer": "dlsode"
         },
         "network": {
-            "merge_chatterings": "yes"
+            "merge_chatterings": "no"
         },
         "propagator": {
             "primary_type": "from_file",
@@ -51,19 +51,19 @@ def get_local_settings():
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # end species index, either None, or [] or [14, 15]
-        "end_s_idx": [59, 17, 14],
+        "end_s_idx": [14],
         # top n path
-        "top_n_p": 5000,
+        "top_n_p": 100,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 10,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e8,
+        "mc_n_traj": 1e9,
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
-        "pi_n_time": 50,
+        "pi_n_time": 25,
         # tag, M or fraction
         "tag": "M"
     }
@@ -78,69 +78,70 @@ def get_chattering_species(atom_followed="C"):
     better make them in the same order
     """
     fast_transitions = [
-        # 1068    549     O2+npropyl=npropyloo
-        # reactants       9       O2      60      npropyl products        78      npropyloo
-        # 1069    -549    O2+npropyl=npropyloo
-        {
-            "rxn": [1068, 1069],
-            "spe": {
-                "H": [60, 78],
-                "O": [78, 9],
-                "C": [60, 78],
-                "HA1": [60, 78],
-                "HA2": [60, 78],
-                "HA3": [60, 78],
-                "HA4": [60, 78]
-            }
-        },
+        {}
+        # # 1068    549     O2+npropyl=npropyloo
+        # # reactants       9       O2      60      npropyl products        78      npropyloo
+        # # 1069    -549    O2+npropyl=npropyloo
+        # {
+        #     "rxn": [1068, 1069],
+        #     "spe": {
+        #         "H": [60, 78],
+        #         "O": [78, 9],
+        #         "C": [60, 78],
+        #         "HA1": [60, 78],
+        #         "HA2": [60, 78],
+        #         "HA3": [60, 78],
+        #         "HA4": [60, 78]
+        #     }
+        # },
 
 
-        # 1116    575     O2+QOOH_1=well_1
-        # reactants       9       O2      87      QOOH_1  products        90      well_1
-        # 1117    -575    O2+QOOH_1=well_1
-        {
-            "rxn": [1116, 1117],
-            "spe": {
-                "H": [87, 90],
-                "O": [90, 9],
-                "C": [87, 90],
-                "HA1": [87, 90],
-                "HA2": [87, 90],
-                "HA3": [87, 90],
-                "HA4": [87, 90]
-            }
-        },
+        # # 1116    575     O2+QOOH_1=well_1
+        # # reactants       9       O2      87      QOOH_1  products        90      well_1
+        # # 1117    -575    O2+QOOH_1=well_1
+        # {
+        #     "rxn": [1116, 1117],
+        #     "spe": {
+        #         "H": [87, 90],
+        #         "O": [90, 9],
+        #         "C": [87, 90],
+        #         "HA1": [87, 90],
+        #         "HA2": [87, 90],
+        #         "HA3": [87, 90],
+        #         "HA4": [87, 90]
+        #     }
+        # },
 
-        # 1080    556     npropyloo=QOOH_1        557     npropyloo=QOOH_1
-        # reactants       78      npropyloo       products        87      QOOH_1
-        # 1081    -556    npropyloo=QOOH_1        -557    npropyloo=QOOH_1
-        {
-            "rxn": [1080, 1081],
-            "spe": {
-                "H": [78, 87],
-                "C": [78, 87],
-                "HA1": [78, 87],
-                "HA2": [78, 87],
-                "HA3": [78, 87],
-                "HA4": [78, 87]
-            }
-        },
+        # # 1080    556     npropyloo=QOOH_1        557     npropyloo=QOOH_1
+        # # reactants       78      npropyloo       products        87      QOOH_1
+        # # 1081    -556    npropyloo=QOOH_1        -557    npropyloo=QOOH_1
+        # {
+        #     "rxn": [1080, 1081],
+        #     "spe": {
+        #         "H": [78, 87],
+        #         "C": [78, 87],
+        #         "HA1": [78, 87],
+        #         "HA2": [78, 87],
+        #         "HA3": [78, 87],
+        #         "HA4": [78, 87]
+        #     }
+        # },
 
-        # 1096    565     O2+ipropyl=ipropyloo
-        # reactants       9       O2      61      ipropyl products        80      ipropyloo
-        # 1097    -565    O2+ipropyl=ipropyloo
-        {
-            "rxn": [1096, 1097],
-            "spe": {
-                "H": [61, 80],
-                "O": [80, 9],
-                "C": [61, 80],
-                "HA1": [61, 80],
-                "HA2": [61, 80],
-                "HA3": [61, 80],
-                "HA4": [61, 80]
-            }
-        }
+        # # 1096    565     O2+ipropyl=ipropyloo
+        # # reactants       9       O2      61      ipropyl products        80      ipropyloo
+        # # 1097    -565    O2+ipropyl=ipropyloo
+        # {
+        #     "rxn": [1096, 1097],
+        #     "spe": {
+        #         "H": [61, 80],
+        #         "O": [80, 9],
+        #         "C": [61, 80],
+        #         "HA1": [61, 80],
+        #         "HA2": [61, 80],
+        #         "HA3": [61, 80],
+        #         "HA4": [61, 80]
+        #     }
+        # },
 
         # # 1124	579	O2 + QOOH_2 = well_2
         # # reactants	9	O2	88	QOOH_2	products	91	well_2

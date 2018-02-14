@@ -7,7 +7,7 @@
         "initializer": "dlsode"
     },
     "network": {
-        "merge_chatterings": "yes"
+        "merge_chatterings": "no"
     },
     "job": {
         "job_type": "evaluate_path_integral_over_time"
@@ -71,7 +71,7 @@
         "begin_t": 0.0,
         "end_t": 0.25718313951098054,
         "topN": [
-            50000
+            1000
         ],
         "trajectoryNumber": 10000,
         "trajectoryNumberVector": [
@@ -83,24 +83,7 @@
         ],
         "trajectory_count_limit": 1,
         "terminal_species": [],
-        "chattering_species": {
-            "1": [
-                60,
-                78
-            ],
-            "2": [
-                87,
-                90
-            ],
-            "3": [
-                78,
-                87
-            ],
-            "4": [
-                61,
-                80
-            ]
-        },
+        "chattering_species": {},
         "non_zero_rate_reaction": [],
         "max_path_length": [
             10,
