@@ -228,7 +228,7 @@ def get_chattering_species(atom_followed="C"):
             "spe": {
                 "H": [25, 27],
                 "C": [25, 27],
-                "O": [25, 27],
+                "O": [9, 27],
                 "HA1": [25, 27],
                 "HA2": [25, 27],
                 "HA3": [25, 27],
