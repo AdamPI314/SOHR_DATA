@@ -78,39 +78,39 @@ def get_chattering_species(atom_followed="C"):
     better make them in the same order
     """
     fast_transitions = [
-        {}
-        # # 1068    549     O2+npropyl=npropyloo
-        # # reactants       9       O2      60      npropyl products        78      npropyloo
-        # # 1069    -549    O2+npropyl=npropyloo
-        # {
-        #     "rxn": [1068, 1069],
-        #     "spe": {
-        #         "H": [60, 78],
-        #         "O": [78, 9],
-        #         "C": [60, 78],
-        #         "HA1": [60, 78],
-        #         "HA2": [60, 78],
-        #         "HA3": [60, 78],
-        #         "HA4": [60, 78]
-        #     }
-        # },
+        # {}
+        # 1068    549     O2+npropyl=npropyloo
+        # reactants       9       O2      60      npropyl products        78      npropyloo
+        # 1069    -549    O2+npropyl=npropyloo
+        {
+            "rxn": [1068, 1069],
+            "spe": {
+                "H": [60, 78],
+                "O": [78, 9],
+                "C": [60, 78],
+                "HA1": [60, 78],
+                "HA2": [60, 78],
+                "HA3": [60, 78],
+                "HA4": [60, 78]
+            }
+        },
 
 
-        # # 1116    575     O2+QOOH_1=well_1
-        # # reactants       9       O2      87      QOOH_1  products        90      well_1
-        # # 1117    -575    O2+QOOH_1=well_1
-        # {
-        #     "rxn": [1116, 1117],
-        #     "spe": {
-        #         "H": [87, 90],
-        #         "O": [90, 9],
-        #         "C": [87, 90],
-        #         "HA1": [87, 90],
-        #         "HA2": [87, 90],
-        #         "HA3": [87, 90],
-        #         "HA4": [87, 90]
-        #     }
-        # },
+        # 1116    575     O2+QOOH_1=well_1
+        # reactants       9       O2      87      QOOH_1  products        90      well_1
+        # 1117    -575    O2+QOOH_1=well_1
+        {
+            "rxn": [1116, 1117],
+            "spe": {
+                "H": [87, 90],
+                "O": [90, 9],
+                "C": [87, 90],
+                "HA1": [87, 90],
+                "HA2": [87, 90],
+                "HA3": [87, 90],
+                "HA4": [87, 90]
+            }
+        },
 
         # # 1080    556     npropyloo=QOOH_1        557     npropyloo=QOOH_1
         # # reactants       78      npropyloo       products        87      QOOH_1
@@ -127,51 +127,51 @@ def get_chattering_species(atom_followed="C"):
         #     }
         # },
 
-        # # 1096    565     O2+ipropyl=ipropyloo
-        # # reactants       9       O2      61      ipropyl products        80      ipropyloo
-        # # 1097    -565    O2+ipropyl=ipropyloo
-        # {
-        #     "rxn": [1096, 1097],
-        #     "spe": {
-        #         "H": [61, 80],
-        #         "O": [80, 9],
-        #         "C": [61, 80],
-        #         "HA1": [61, 80],
-        #         "HA2": [61, 80],
-        #         "HA3": [61, 80],
-        #         "HA4": [61, 80]
-        #     }
-        # },
+        # 1096    565     O2+ipropyl=ipropyloo
+        # reactants       9       O2      61      ipropyl products        80      ipropyloo
+        # 1097    -565    O2+ipropyl=ipropyloo
+        {
+            "rxn": [1096, 1097],
+            "spe": {
+                "H": [61, 80],
+                "O": [80, 9],
+                "C": [61, 80],
+                "HA1": [61, 80],
+                "HA2": [61, 80],
+                "HA3": [61, 80],
+                "HA4": [61, 80]
+            }
+        },
 
-        # # 1124	579	O2 + QOOH_2 = well_2
-        # # reactants	9	O2	88	QOOH_2	products	91	well_2
-        # # net_reactants	9	O2	88	QOOH_2	net_products	91	well_2
-        # {
-        #     "rxn": [1124, 1125],
-        #     "spe": {
-        #         "H": [88, 91],
-        #         "C": [88, 91],
-        #         "HA1": [88, 91],
-        #         "HA2": [88, 91],
-        #         "HA3": [88, 91],
-        #         "HA4": [88, 91]
-        #     }
-        # },
+        # 1124	579	O2 + QOOH_2 = well_2
+        # reactants	9	O2	88	QOOH_2	products	91	well_2
+        # net_reactants	9	O2	88	QOOH_2	net_products	91	well_2
+        {
+            "rxn": [1124, 1125],
+            "spe": {
+                "H": [88, 91],
+                "C": [88, 91],
+                "HA1": [88, 91],
+                "HA2": [88, 91],
+                "HA3": [88, 91],
+                "HA4": [88, 91]
+            }
+        },
 
-        # # 1146	590	O2 + QOOH_3 = well_3
-        # # reactants	9	O2	89	QOOH_3	products	92	well_3
-        # # net_reactants	9	O2	89	QOOH_3	net_products	92	well_3
-        # {
-        #     "rxn": [1146, 1147],
-        #     "spe": {
-        #         "H": [89, 92],
-        #         "C": [89, 92],
-        #         "HA1": [89, 92],
-        #         "HA2": [89, 92],
-        #         "HA3": [89, 92],
-        #         "HA4": [89, 92]
-        #     }
-        # },
+        # 1146	590	O2 + QOOH_3 = well_3
+        # reactants	9	O2	89	QOOH_3	products	92	well_3
+        # net_reactants	9	O2	89	QOOH_3	net_products	92	well_3
+        {
+            "rxn": [1146, 1147],
+            "spe": {
+                "H": [89, 92],
+                "C": [89, 92],
+                "HA1": [89, 92],
+                "HA2": [89, 92],
+                "HA3": [89, 92],
+                "HA4": [89, 92]
+            }
+        },
 
         # # 1214	624	prod_1=frag_1+OH
         # # reactants	94	prod_1	products	10	OH	101	frag_1
@@ -204,57 +204,57 @@ def get_chattering_species(atom_followed="C"):
         #     }
         # },
 
-        # # 348     180     C2H5+O2=CH3CH2OO
-        # # reactants       39      C2H5    9       O2      products        50      CH3CH2OO
-        # # 349     -180    C2H5+O2=CH3CH2OO
-        # {
-        #     "rxn": [348, 349],
-        #     "spe": {
-        #         "H": [39, 50],
-        #         "C": [39, 50],
-        #         "O": [9, 50],
-        #         "HA1": [39, 50],
-        #         "HA2": [39, 50],
-        #         "HA3": [39, 50],
-        #         "HA4": [39, 50]
-        #     }
-        # },
+        # 348     180     C2H5+O2=CH3CH2OO
+        # reactants       39      C2H5    9       O2      products        50      CH3CH2OO
+        # 349     -180    C2H5+O2=CH3CH2OO
+        {
+            "rxn": [348, 349],
+            "spe": {
+                "H": [39, 50],
+                "C": [39, 50],
+                "O": [9, 50],
+                "HA1": [39, 50],
+                "HA2": [39, 50],
+                "HA3": [39, 50],
+                "HA4": [39, 50]
+            }
+        },
 
-        # # 132     69      CH3+O2(+M)=CH3OO(+M)
-        # # reactants       25      CH3     9       O2      products        27      CH3OO
-        # # 133     -69     CH3+O2(+M)=CH3OO(+M)
-        # {
-        #     "rxn": [132, 133],
-        #     "spe": {
-        #         "H": [25, 27],
-        #         "C": [25, 27],
-        #         "O": [25, 27],
-        #         "HA1": [25, 27],
-        #         "HA2": [25, 27],
-        #         "HA3": [25, 27],
-        #         "HA4": [25, 27]
-        #     }
-        # },
+        # 132     69      CH3+O2(+M)=CH3OO(+M)
+        # reactants       25      CH3     9       O2      products        27      CH3OO
+        # 133     -69     CH3+O2(+M)=CH3OO(+M)
+        {
+            "rxn": [132, 133],
+            "spe": {
+                "H": [25, 27],
+                "C": [25, 27],
+                "O": [25, 27],
+                "HA1": [25, 27],
+                "HA2": [25, 27],
+                "HA3": [25, 27],
+                "HA4": [25, 27]
+            }
+        },
 
-        # # 586     300     O2C2H4OH=CH2CH2OH+O2
-        # # reactants       85      O2C2H4OH        products        54      CH2CH2OH        9       O2
-        # # 587     -300    O2C2H4OH=CH2CH2OH+O2
-        # {
-        #     "rxn": [586, 587],
-        #     "spe": {
-        #         "C": [85, 54]
-        #     }
-        # },
+        # 586     300     O2C2H4OH=CH2CH2OH+O2
+        # reactants       85      O2C2H4OH        products        54      CH2CH2OH        9       O2
+        # 587     -300    O2C2H4OH=CH2CH2OH+O2
+        {
+            "rxn": [586, 587],
+            "spe": {
+                "C": [85, 54]
+            }
+        },
 
-        # # 434     224     acetyl+O2=acetylperoxy
-        # # reactants       9       O2      45      acetyl  products        47      acetylperoxy
-        # # 435     -224    acetyl+O2=acetylperoxy
-        # {
-        #     "rxn": [434, 435],
-        #     "spe": {
-        #         "C": [45, 47]
-        #     }
-        # }
+        # 434     224     acetyl+O2=acetylperoxy
+        # reactants       9       O2      45      acetyl  products        47      acetylperoxy
+        # 435     -224    acetyl+O2=acetylperoxy
+        {
+            "rxn": [434, 435],
+            "spe": {
+                "C": [45, 47]
+            }
+        }
 
     ]
 
