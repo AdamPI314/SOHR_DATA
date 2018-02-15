@@ -14,7 +14,7 @@ def get_local_settings():
             "initializer": "dlsode"
         },
         "network": {
-            "merge_chatterings": "no"
+            "merge_chatterings": "yes"
         },
         "propagator": {
             "primary_type": "from_file",
@@ -51,9 +51,9 @@ def get_local_settings():
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # end species index, either None, or [] or [14, 15]
-        "end_s_idx": [14],
+        "end_s_idx": [14, 59, 17],
         # top n path
-        "top_n_p": 1000,
+        "top_n_p": 100,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
