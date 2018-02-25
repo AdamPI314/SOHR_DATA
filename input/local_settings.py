@@ -57,9 +57,9 @@ def get_local_settings():
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
-        "top_n_s": 10,
+        "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e9,
+        "mc_n_traj": 1e8,
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
@@ -86,8 +86,8 @@ def get_chattering_species(atom_followed="C"):
             "rxn": [1068, 1069],
             "spe": {
                 "H": [60, 78],
-                "O": [78, 9],
                 "C": [60, 78],
+                "O": [9, 78],
                 "HA1": [60, 78],
                 "HA2": [60, 78],
                 "HA3": [60, 78],
@@ -103,8 +103,8 @@ def get_chattering_species(atom_followed="C"):
             "rxn": [1116, 1117],
             "spe": {
                 "H": [87, 90],
-                "O": [90, 9],
                 "C": [87, 90],
+                "O": [9, 90],
                 "HA1": [87, 90],
                 "HA2": [87, 90],
                 "HA3": [87, 90],
@@ -112,20 +112,21 @@ def get_chattering_species(atom_followed="C"):
             }
         },
 
-        # # 1080    556     npropyloo=QOOH_1        557     npropyloo=QOOH_1
-        # # reactants       78      npropyloo       products        87      QOOH_1
-        # # 1081    -556    npropyloo=QOOH_1        -557    npropyloo=QOOH_1
-        # {
-        #     "rxn": [1080, 1081],
-        #     "spe": {
-        #         "H": [78, 87],
-        #         "C": [78, 87],
-        #         "HA1": [78, 87],
-        #         "HA2": [78, 87],
-        #         "HA3": [78, 87],
-        #         "HA4": [78, 87]
-        #     }
-        # },
+        # 1080    556     npropyloo=QOOH_1        557     npropyloo=QOOH_1
+        # reactants       78      npropyloo       products        87      QOOH_1
+        # 1081    -556    npropyloo=QOOH_1        -557    npropyloo=QOOH_1
+        {
+            "rxn": [1080, 1081],
+            "spe": {
+                "H": [78, 87],
+                "C": [78, 87],
+                "O": [78, 87],
+                "HA1": [78, 87],
+                "HA2": [78, 87],
+                "HA3": [78, 87],
+                "HA4": [78, 87]
+            }
+        },
 
         # 1096    565     O2+ipropyl=ipropyloo
         # reactants       9       O2      61      ipropyl products        80      ipropyloo
@@ -134,8 +135,8 @@ def get_chattering_species(atom_followed="C"):
             "rxn": [1096, 1097],
             "spe": {
                 "H": [61, 80],
-                "O": [80, 9],
                 "C": [61, 80],
+                "O": [9, 80],
                 "HA1": [61, 80],
                 "HA2": [61, 80],
                 "HA3": [61, 80],
@@ -151,6 +152,7 @@ def get_chattering_species(atom_followed="C"):
             "spe": {
                 "H": [88, 91],
                 "C": [88, 91],
+                "O": [9, 91],
                 "HA1": [88, 91],
                 "HA2": [88, 91],
                 "HA3": [88, 91],
@@ -166,6 +168,7 @@ def get_chattering_species(atom_followed="C"):
             "spe": {
                 "H": [89, 92],
                 "C": [89, 92],
+                "O": [9, 92],
                 "HA1": [89, 92],
                 "HA2": [89, 92],
                 "HA3": [89, 92],
@@ -181,6 +184,7 @@ def get_chattering_species(atom_followed="C"):
         #     "spe": {
         #         "H": [94, 101],
         #         "C": [94, 101],
+        #         "O": [94, 101],
         #         "HA1": [94, 101],
         #         "HA2": [94, 101],
         #         "HA3": [94, 101],
@@ -188,21 +192,21 @@ def get_chattering_species(atom_followed="C"):
         #     }
         # },
 
-        # # 1042    536     allyloxy=vinoxylmethyl
-        # # reactants       72      allyloxy        products        108     vinoxylmethyl
-        # # 1043    -536    allyloxy=vinoxylmethyl
-        # {
-        #     "rxn": [1042, 1043],
-        #     "spe": {
-        #         "H": [72, 108],
-        #         "C": [72, 108],
-        #         "O": [72, 108],
-        #         "HA1": [72, 108],
-        #         "HA2": [72, 108],
-        #         "HA3": [72, 108],
-        #         "HA4": [72, 108]
-        #     }
-        # },
+        # 1042    536     allyloxy=vinoxylmethyl
+        # reactants       72      allyloxy        products        108     vinoxylmethyl
+        # 1043    -536    allyloxy=vinoxylmethyl
+        {
+            "rxn": [1042, 1043],
+            "spe": {
+                "H": [72, 108],
+                "C": [72, 108],
+                "O": [72, 108],
+                "HA1": [72, 108],
+                "HA2": [72, 108],
+                "HA3": [72, 108],
+                "HA4": [72, 108]
+            }
+        },
 
         # 348     180     C2H5+O2=CH3CH2OO
         # reactants       39      C2H5    9       O2      products        50      CH3CH2OO
@@ -242,7 +246,13 @@ def get_chattering_species(atom_followed="C"):
         {
             "rxn": [586, 587],
             "spe": {
-                "C": [85, 54]
+                "H": [85, 54],
+                "C": [85, 54],
+                "O": [85, 9],
+                "HA1": [85, 54],
+                "HA2": [85, 54],
+                "HA3": [85, 54],
+                "HA4": [85, 54]
             }
         },
 
@@ -252,7 +262,13 @@ def get_chattering_species(atom_followed="C"):
         {
             "rxn": [434, 435],
             "spe": {
-                "C": [45, 47]
+                "H": [45, 47],
+                "C": [45, 47],
+                "O": [9, 47],
+                "HA1": [45, 47],
+                "HA2": [45, 47],
+                "HA3": [45, 47],
+                "HA4": [45, 47]
             }
         }
 
