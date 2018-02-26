@@ -61,7 +61,7 @@ def get_local_settings():
         # number of trajectory used to generate pathway list running mc simulation
         "mc_n_traj": 1e8,
         # path integral number of trajectory
-        "pi_n_traj": 10000,
+        "pi_n_traj": 1000000,
         # number of time points when prepare path integral time points
         "pi_n_time": 25,
         # tag, M or fraction
