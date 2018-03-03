@@ -8,6 +8,7 @@ input/*
 !input/cmd.cfg
 
 !input/setting.json
+!input/spe_alias.json
 
 !input/mmc2.txt
 
