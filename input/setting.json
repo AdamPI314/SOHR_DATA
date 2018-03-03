@@ -70,11 +70,11 @@
         "atom_followed": "C",
         "super_atom": "X",
         "begin_t": 0.0,
-        "end_t": 0.25718313951098054,
+        "end_t": 0.2571831395109806,
         "topN": [
-            100
+            10
         ],
-        "trajectoryNumber": 100000,
+        "trajectoryNumber": 10000,
         "trajectoryNumberVector": [
             1000,
             1000,

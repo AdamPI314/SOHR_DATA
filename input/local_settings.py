@@ -14,7 +14,8 @@ def get_local_settings():
             "initializer": "dlsode"
         },
         "network": {
-            "merge_chatterings": "yes"
+            "merge_chatterings": "yes",
+            "condense_chatterings": "yes"
         },
         "propagator": {
             "primary_type": "from_file",
@@ -41,12 +42,13 @@ def get_local_settings():
         # here 0.25718313951098054 is actually 0.2 seconds
         # "end_t": 0.25718313951098054,
         # "end_t": 0.25718313951098055,
-        "end_t": 0.25718313951098056,
+        # "end_t": 0.25718313951098056,
+        "end_t": 0.25718313951098057,
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
         "spe_oriented": False,
         # condense species path, no reactions
-        "species_path": True,
+        "species_path": False,
         # atom followed
         "atom_f": "C",
         "init_s": 62,
@@ -55,15 +57,15 @@ def get_local_settings():
         # end species index, either None, or [] or [14, 15]
         "end_s_idx": [],
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 10,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e9,
+        "mc_n_traj": 1e8,
         # path integral number of trajectory
-        "pi_n_traj": 100000,
+        "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
         "pi_n_time": 1,
         # tag, M or fraction
