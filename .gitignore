@@ -9,6 +9,7 @@ input/*
 
 !input/setting.json
 !input/spe_alias.json
+!input/spe_alias_latex.json
 
 !input/mmc2.txt
 
