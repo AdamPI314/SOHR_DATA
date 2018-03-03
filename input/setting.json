@@ -7,10 +7,11 @@
         "initializer": "dlsode"
     },
     "network": {
-        "merge_chatterings": "yes"
+        "merge_chatterings": "yes",
+		"condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "evaluate_path_integral_over_time"
+        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -73,7 +74,7 @@
         "topN": [
             1000
         ],
-        "trajectoryNumber": 10000,
+        "trajectoryNumber": 100,
         "trajectoryNumberVector": [
             1000,
             1000,
