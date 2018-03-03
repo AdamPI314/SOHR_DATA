@@ -48,7 +48,7 @@ def get_local_settings():
         #  if False, just top n pathway
         "spe_oriented": False,
         # condense species path, no reactions
-        "species_path": False,
+        "species_path": True,
         # atom followed
         "atom_f": "C",
         "init_s": 62,
@@ -57,15 +57,15 @@ def get_local_settings():
         # end species index, either None, or [] or [14, 15]
         "end_s_idx": [],
         # top n path
-        "top_n_p": 10,
+        "top_n_p": 15,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e8,
+        "mc_n_traj": 1e10,
         # path integral number of trajectory
-        "pi_n_traj": 10000,
+        "pi_n_traj": 1000000,
         # number of time points when prepare path integral time points
         "pi_n_time": 1,
         # tag, M or fraction
