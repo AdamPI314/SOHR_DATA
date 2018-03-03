@@ -7,10 +7,11 @@
         "initializer": "dlsode"
     },
     "network": {
-        "merge_chatterings": "yes"
+        "merge_chatterings": "yes",
+        "condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "evaluate_path_integral_over_time"
+        "job_type": "evaluate_species_path_integral_over_time"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -71,9 +72,9 @@
         "begin_t": 0.0,
         "end_t": 0.25718313951098054,
         "topN": [
-            500
+            100
         ],
-        "trajectoryNumber": 1000000,
+        "trajectoryNumber": 100000,
         "trajectoryNumberVector": [
             1000,
             1000,
