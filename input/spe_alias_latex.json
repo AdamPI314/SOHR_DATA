@@ -1,16 +1,12 @@
 {
-	"C3H8": "$C_3H_8$",	
-	"ipropyl": "C3H7-2",
-	"npropyl": "C3H7-1",
-	"npropyloo": "C3H7,OO-1",
-	"ipropyloo": "C3H7,OO-2",
-	"npropyloxy": "C3H7,O-1",
-	"ipropyloxy": "C3H7,O-2",
-	"npropylooh": "C3H7,OOH-1",
-	"ipropylooh": "C3H7,OOH-2",
-	"ethoxy": "CH3CH2O",
-	"acrolein": "CH2CHCHO",
-	"acetone": "(CH3)2CO",
-	"acetyloxy": "CH3COO"
+	"C3H8": "$nRH$",	
+	"well_1,npropyl,npropyloo,QOOH_1": "$nR,nROO,QOOH_1,HOOQ^{\\prime}OOH_1$",
+	"CH2O": "$CH_2O$",
+	"C3H6": "$C_3H_6$",
+	"vinoxy": "$CH_2CHO$",
+	"prod_1": "$OQ^{\\prime}OOH_1$",
+	"frag_1": "$OQ^{\\prime}O_1$",
+	"ipropylooh": "$iROOH$",
+	"ipropyloo,ipropyl": "$iR,iROO$"
 
 }
