@@ -11,7 +11,7 @@
         "condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "evaluate_species_path_integral_over_time"
+        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -74,7 +74,7 @@
         "topN": [
             10
         ],
-        "trajectoryNumber": 10000,
+        "trajectoryNumber": 1,
         "trajectoryNumberVector": [
             1000,
             1000,
