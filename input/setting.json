@@ -11,7 +11,7 @@
         "condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
+        "job_type": "evaluate_path_integral_over_time"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -78,9 +78,9 @@
         "atom_followed": "C",
         "super_atom": "X",
         "begin_t": 0.0,
-        "end_t": 0.5,
+        "end_t": 0.25718313951098054,
         "topN": [
-            300
+            100
         ],
         "trajectoryNumber": 100000,
         "trajectoryNumberVector": [
