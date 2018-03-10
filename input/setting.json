@@ -66,6 +66,14 @@
         "number_of_Ks": 3
     },
     "pathway": {
+        "apply_pathway_constraint": "yes",
+        "reaction_constraint": {
+            "1": [
+                736,
+                738
+            ]
+        },
+        "species_constraint": {},
         "init_spe": 62,
         "atom_followed": "C",
         "super_atom": "X",
