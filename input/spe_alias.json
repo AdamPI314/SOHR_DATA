@@ -1,4 +1,5 @@
 {
-	"acrolein": "CH2CHCHO",
-	"acetyloxy": "CH3COO"
+	"well_1": "O2QOOH_1",
+	"prod_1": "OQ'OOH_1",
+	"frag_1": "OQ'O_1"
 }

@@ -11,7 +11,7 @@
         "condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "evaluate_species_path_integral_over_time"
+        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -66,6 +66,14 @@
         "number_of_Ks": 3
     },
     "pathway": {
+        "apply_pathway_constraint": "yes",
+        "species_sink_reaction_constraint": {
+            "62": [
+                736,
+                738
+            ]
+        },
+        "reaction_out_species_constraint": {},
         "init_spe": 62,
         "atom_followed": "C",
         "super_atom": "X",
