@@ -74,6 +74,7 @@
             ]
         },
         "reaction_out_species_constraint": {},
+		"must_react_species": [62],
         "init_spe": 62,
         "atom_followed": "C",
         "super_atom": "X",
