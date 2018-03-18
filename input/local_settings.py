@@ -49,7 +49,8 @@ def get_local_settings():
         # condense species path, no reactions
         "species_path": False,
         # atom followed
-        "atom_f": "C",
+        # "atom_f": "C",
+        "atom_f": "HA4",
         # "init_s": 62,
         "init_s": 10,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
