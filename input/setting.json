@@ -67,15 +67,10 @@
     },
     "pathway": {
         "apply_pathway_constraint": "yes",
-        "species_sink_reaction_constraint": {
-            "62": [
-                736,
-                738
-            ]
-        },
+        "species_sink_reaction_constraint": {},
         "reaction_out_species_constraint": {},
         "not_allowed_out_species": [10],
-		"must_react_species": [62],
+		"must_react_species": [],
         "init_spe": 10,
         "atom_followed": "HA4",
         "super_atom": "X",
