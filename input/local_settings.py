@@ -50,7 +50,8 @@ def get_local_settings():
         "species_path": False,
         # atom followed
         "atom_f": "C",
-        "init_s": 62,
+        # "init_s": 62,
+        "init_s": 10,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
@@ -65,9 +66,9 @@ def get_local_settings():
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e9,
+        "mc_n_traj": 1e8,
         # path integral number of trajectory
-        "pi_n_traj": 100000,
+        "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
         "pi_n_time": 1,
         # tag, M or fraction
