@@ -67,7 +67,7 @@ def get_local_settings():
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e8,
+        "mc_n_traj": 1e7,
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
