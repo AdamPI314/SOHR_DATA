@@ -61,7 +61,7 @@ def get_local_settings():
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 1000,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
