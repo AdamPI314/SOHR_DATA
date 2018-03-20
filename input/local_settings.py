@@ -44,7 +44,8 @@ def get_local_settings():
         # here 0.25718313951098054 is actually 0.2 seconds
         # "end_t": 0.25718313951098054,
         # "end_t": 0.5,
-        "end_t": 0.9,
+        # "end_t": 0.9,
+        "end_t": 1e-6,
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
         "spe_oriented": False,
