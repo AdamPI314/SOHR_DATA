@@ -56,7 +56,7 @@ def get_local_settings():
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
-        "init_s_idx": None,
+        "init_s_idx": [10],
         # end species index, either None, or [] or [14, 15]
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
