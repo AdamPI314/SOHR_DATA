@@ -35,14 +35,14 @@ def get_local_settings():
         # check routine get_time_at_time_differential_maximum from trajectory.py
         "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
-        "mc_t": 0.25718313951098054,
-        # "mc_t": 0.5,
+        # "mc_t": 0.25718313951098054,
+        "mc_t": 0.5,
         # beginning time, for pathway or for trajectory, exact time = begin_t*tau
         "begin_t": 0.0,
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
-        "end_t": 0.25718313951098054,
-        # "end_t": 0.5,
+        # "end_t": 0.25718313951098054,
+        "end_t": 0.5,
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
         "spe_oriented": False,
