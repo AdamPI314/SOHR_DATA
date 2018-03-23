@@ -48,6 +48,8 @@ def get_local_settings():
         # "end_t": 0.5,
         # "end_t": 0.9,
         # "end_t": 1e-6,
+	# fix t0 or tf, default t0
+	"fixed_t0_or_tf": "tf",
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
         "spe_oriented": False,
