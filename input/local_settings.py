@@ -35,21 +35,21 @@ def get_local_settings():
         # check routine get_time_at_time_differential_maximum from trajectory.py
         "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
-        "mc_t": 0.01,
+        # "mc_t": 0.01,
         # "mc_t": 0.25718313951098054,
         # "mc_t": 0.5,
-        # "mc_t": 0.9,
+        "mc_t": 0.9,
         # beginning time, for pathway or for trajectory, exact time = begin_t*tau
         "begin_t": 0.0,
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
-        "end_t": 0.01,
+        # "end_t": 0.01,
         # "end_t": 0.25718313951098054,
         # "end_t": 0.5,
-        # "end_t": 0.9,
+        "end_t": 0.9,
         # "end_t": 1e-6,
-	# fix t0 or tf, default t0
-	"fixed_t0_or_tf": "tf",
+        # fix t0 or tf, default t0
+        "fixed_t0_or_tf": "t0",
         # species oriented, if true, pick pathways ending with top_n species,
         #  if False, just top n pathway
         "spe_oriented": False,
@@ -68,17 +68,17 @@ def get_local_settings():
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 1000,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e7,
+        "mc_n_traj": 1e9,
         # path integral number of trajectory
         "pi_n_traj": 100000,
         # number of time points when prepare path integral time points
-        "pi_n_time": 1,
+        "pi_n_time": 25,
         # tag, M or fraction
         "tag": "M"
     }
