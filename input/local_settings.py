@@ -58,17 +58,16 @@ def get_local_settings():
         # atom followed
         # "atom_f": "C",
         "atom_f": "HA4",
-        # "init_s": 62,
-        "init_s": 10,
+        "init_s": 60,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
-        "init_s_idx": [10],
+        "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 1000,
+        "top_n_p": 100,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
@@ -76,9 +75,9 @@ def get_local_settings():
         # number of trajectory used to generate pathway list running mc simulation
         "mc_n_traj": 1e8,
         # path integral number of trajectory
-        "pi_n_traj": 100000,
+        "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
-        "pi_n_time": 25,
+        "pi_n_time": 1,
         # tag, M or fraction
         "tag": "M"
     }
