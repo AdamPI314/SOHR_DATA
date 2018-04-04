@@ -105,7 +105,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [60, 78],
                 "HA2": [60, 78],
                 "HA3": [60, 78],
-                "HA4": [60, 78]
+                "HA4": [60, 78],
+                "HA5": [60, 78]
             }
         },
 
@@ -122,7 +123,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [87, 90],
                 "HA2": [87, 90],
                 "HA3": [87, 90],
-                "HA4": [87, 90]
+                "HA4": [87, 90],
+                "HA5": [87, 90]
             }
         },
 
@@ -138,7 +140,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [78, 87],
                 "HA2": [78, 87],
                 "HA3": [78, 87],
-                "HA4": [78, 87]
+                "HA4": [78, 87],
+                "HA5": [78, 87]
             }
         },
 
@@ -154,7 +157,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [61, 80],
                 "HA2": [61, 80],
                 "HA3": [61, 80],
-                "HA4": [61, 80]
+                "HA4": [61, 80],
+                "HA5": [61, 80]
             }
         },
 
@@ -170,7 +174,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [88, 91],
                 "HA2": [88, 91],
                 "HA3": [88, 91],
-                "HA4": [88, 91]
+                "HA4": [88, 91],
+                "HA5": [88, 91]
             }
         },
 
@@ -186,7 +191,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [89, 92],
                 "HA2": [89, 92],
                 "HA3": [89, 92],
-                "HA4": [89, 92]
+                "HA4": [89, 92],
+                "HA5": [89, 92]
             }
         },
 
@@ -202,7 +208,8 @@ def get_chattering_species(atom_followed="C"):
         #         "HA1": [94, 101],
         #         "HA2": [94, 101],
         #         "HA3": [94, 101],
-        #         "HA4": [94, 101]
+        #         "HA4": [94, 101],
+        #         "HA5": [94, 101]
         #     }
         # },
 
@@ -218,7 +225,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [72, 108],
                 "HA2": [72, 108],
                 "HA3": [72, 108],
-                "HA4": [72, 108]
+                "HA4": [72, 108],
+                "HA5": [72, 108]
             }
         },
 
@@ -234,7 +242,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [39, 50],
                 "HA2": [39, 50],
                 "HA3": [39, 50],
-                "HA4": [39, 50]
+                "HA4": [39, 50],
+                "HA5": [39, 50]
             }
         },
 
@@ -250,7 +259,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [25, 27],
                 "HA2": [25, 27],
                 "HA3": [25, 27],
-                "HA4": [25, 27]
+                "HA4": [25, 27],
+                "HA5": [25, 27]
             }
         },
 
@@ -266,7 +276,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [85, 54],
                 "HA2": [85, 54],
                 "HA3": [85, 54],
-                "HA4": [85, 54]
+                "HA4": [85, 54],
+                "HA5": [85, 54]
             }
         },
 
@@ -282,7 +293,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA1": [45, 47],
                 "HA2": [45, 47],
                 "HA3": [45, 47],
-                "HA4": [45, 47]
+                "HA4": [45, 47],
+                "HA5": [45, 47]
             }
         }
 
