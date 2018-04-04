@@ -57,8 +57,8 @@ def get_local_settings():
         "species_path": False,
         # atom followed
         # "atom_f": "C",
-        "atom_f": "HA4",
-        "init_s": 60,
+        "atom_f": "HA5",
+        "init_s": 12,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
