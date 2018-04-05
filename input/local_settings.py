@@ -57,7 +57,7 @@ def get_local_settings():
         "species_path": False,
         # atom followed
         # "atom_f": "C",
-        "atom_f": "HA5",
+        "atom_f": "HA6",
         "init_s": 12,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
@@ -67,7 +67,7 @@ def get_local_settings():
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 1000,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
@@ -106,7 +106,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [60, 78],
                 "HA3": [60, 78],
                 "HA4": [60, 78],
-                "HA5": [60, 78]
+                "HA5": [60, 78],
+                "HA6": [60, 78]
             }
         },
 
@@ -124,7 +125,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [87, 90],
                 "HA3": [87, 90],
                 "HA4": [87, 90],
-                "HA5": [87, 90]
+                "HA5": [87, 90],
+                "HA6": [87, 90]
             }
         },
 
@@ -141,7 +143,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [78, 87],
                 "HA3": [78, 87],
                 "HA4": [78, 87],
-                "HA5": [78, 87]
+                "HA5": [78, 87],
+                "HA6": [78, 87]
             }
         },
 
@@ -158,7 +161,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [61, 80],
                 "HA3": [61, 80],
                 "HA4": [61, 80],
-                "HA5": [61, 80]
+                "HA5": [61, 80],
+                "HA6": [61, 80]
             }
         },
 
@@ -175,7 +179,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [88, 91],
                 "HA3": [88, 91],
                 "HA4": [88, 91],
-                "HA5": [88, 91]
+                "HA5": [88, 91],
+                "HA6": [88, 91]
             }
         },
 
@@ -192,7 +197,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [89, 92],
                 "HA3": [89, 92],
                 "HA4": [89, 92],
-                "HA5": [89, 92]
+                "HA5": [89, 92],
+                "HA6": [89, 92]
             }
         },
 
@@ -209,7 +215,8 @@ def get_chattering_species(atom_followed="C"):
         #         "HA2": [94, 101],
         #         "HA3": [94, 101],
         #         "HA4": [94, 101],
-        #         "HA5": [94, 101]
+        #         "HA5": [94, 101],
+        #         "HA6": [94, 101]
         #     }
         # },
 
@@ -226,7 +233,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [72, 108],
                 "HA3": [72, 108],
                 "HA4": [72, 108],
-                "HA5": [72, 108]
+                "HA5": [72, 108],
+                "HA6": [72, 108]
             }
         },
 
@@ -243,7 +251,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [39, 50],
                 "HA3": [39, 50],
                 "HA4": [39, 50],
-                "HA5": [39, 50]
+                "HA5": [39, 50],
+                "HA6": [39, 50]
             }
         },
 
@@ -260,7 +269,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [25, 27],
                 "HA3": [25, 27],
                 "HA4": [25, 27],
-                "HA5": [25, 27]
+                "HA5": [25, 27],
+                "HA6": [25, 27]
             }
         },
 
@@ -277,7 +287,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [85, 54],
                 "HA3": [85, 54],
                 "HA4": [85, 54],
-                "HA5": [85, 54]
+                "HA5": [85, 54],
+                "HA6": [85, 54]
             }
         },
 
@@ -294,7 +305,8 @@ def get_chattering_species(atom_followed="C"):
                 "HA2": [45, 47],
                 "HA3": [45, 47],
                 "HA4": [45, 47],
-                "HA5": [45, 47]
+                "HA5": [45, 47],
+                "HA6": [45, 47]
             }
         }
 
