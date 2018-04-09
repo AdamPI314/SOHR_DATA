@@ -11,7 +11,7 @@
         "condense_chatterings": "yes"
     },
     "job": {
-        "job_type": "generate_pathway_running_Monte_carlo_trajectory"
+        "job_type": "evaluate_path_integral_over_time"
     },
     "propagator": {
         "primary_type": "from_file",
@@ -39,7 +39,7 @@
     },
     "lsode_init": {
         "dt": 2.5e-08,
-        "atol": 1e-16,
+        "atol": 1e-18,
         "rtol": 1e-16,
         "mf": 22,
         "jt": 2,
@@ -69,16 +69,18 @@
         "apply_pathway_constraint": "yes",
         "species_sink_reaction_constraint": {},
         "reaction_out_species_constraint": {},
-        "not_allowed_out_species": [10],
+        "not_allowed_out_species": [
+            10
+        ],
         "must_react_species": [],
-        "fixed_t0_or_tf": "t0",
-	"spe_branching": false,
-	"terminal_sp": false,
+        "fixed_t0_or_tf": "tf",
+        "spe_branching": false,
+        "terminal_sp": false,
         "init_spe": 10,
         "atom_followed": "HA4",
         "super_atom": "X",
         "begin_t": 0.0,
-        "end_t": 0.25718313951098054,
+        "end_t": 0.01,
         "topN": [
             100
         ],
