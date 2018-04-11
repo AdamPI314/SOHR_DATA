@@ -63,7 +63,7 @@ def get_local_settings():
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
         # examples are path_reg=None, path_reg='^S62R(736|738)', path_reg='S(25|27)', path_reg='S(39|50)'
-        "path_reg": 'S(25|27)',
+        "path_reg": 'S(25R|27R|25$|27$)',
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
         "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
