@@ -59,18 +59,21 @@ def get_local_settings():
         # "atom_f": "C",
         "atom_f": "HA4",
         "init_s": 60,
+        # "init_s": 61,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
         # examples are path_reg=None, path_reg='^S62R(736|738)', path_reg='S(25|27)', path_reg='S(39|50)'
-        "path_reg": 'S(25R|27R|25$|27$)',
+        "path_reg": 'S(25R|25$|27R|27$|77R|77$)',
+        # "path_reg": 'S(39R|39$|50R|50$|76R|76$)',
+        # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
         "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 25,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
