@@ -69,7 +69,7 @@ def get_local_settings():
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
         # another filter for pathway name selction, pathway can not contain this regular expression
         # examples are no_path_reg=None, no_path_reg='S(60R|60$)' or no_path_reg='S(61R|61$)', to exclude primary cycles
-        "no_path_reg": 'S(60R|60$)',
+        "no_path_reg": 'R(\d)+S(60R|60$)',
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
         "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
