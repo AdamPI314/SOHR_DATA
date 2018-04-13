@@ -64,9 +64,9 @@ def get_local_settings():
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
         # examples are path_reg=None, path_reg='^S62R(736|738)', path_reg='S(25|27)', path_reg='S(39|50)'
-        "path_reg": 'S(25R|25$|27R|27$|77R|77$)',
+        # "path_reg": 'S(25R|25$|27R|27$|77R|77$)',
         # "path_reg": 'S(39R|39$|50R|50$|76R|76$)',
-        # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
+        "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
         # another filter for pathway name selction, pathway can not contain this regular expression
         # examples are no_path_reg=None, no_path_reg='S(60R|60$)' or no_path_reg='S(61R|61$)', to exclude primary cycles
         "no_path_reg": 'R(\d)+S(60R|60$|61R|61$|78R|78$|80R|80$)',
