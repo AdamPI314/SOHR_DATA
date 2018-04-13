@@ -58,7 +58,7 @@ def get_local_settings():
         # atom followed
         # "atom_f": "C",
         "atom_f": "HA4",
-        "init_s": 60,
+        "init_s": 81,
         # "init_s": 61,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
@@ -69,14 +69,14 @@ def get_local_settings():
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
         # another filter for pathway name selction, pathway can not contain this regular expression
         # examples are no_path_reg=None, no_path_reg='S(60R|60$)' or no_path_reg='S(61R|61$)', to exclude primary cycles
-        "no_path_reg": 'R(\d)+S(60R|60$)',
+        "no_path_reg": 'R(\d)+S(60R|60$|61R|61$|78R|78$|80R|80$)',
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
         "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
         # "end_s_idx": [14, 17, 59],
         "end_s_idx": None,
         # top n path
-        "top_n_p": 25,
+        "top_n_p": 100,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
