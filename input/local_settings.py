@@ -15,7 +15,10 @@ def get_local_settings():
         },
         "network": {
             "merge_chatterings": "yes",
-            "condense_chatterings": "yes"
+            "condense_chatterings": "yes",
+            "not_allowed_out_species": [10, 25],
+            "spe_branching": 'true',
+            "terminal_sp": 'false'
         },
         "propagator": {
             "primary_type": "from_file",
@@ -56,10 +59,11 @@ def get_local_settings():
         # condense species path, no reactions
         "species_path": False,
         # atom followed
-        "atom_f": "C",
-        # "atom_f": "HA4",
-        "init_s": 62,
+        # "atom_f": "C",
+        "atom_f": "HA4",
+        "init_s": 60,
         # "init_s": 61,
+        # "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
@@ -75,8 +79,8 @@ def get_local_settings():
         # initial species index, for species passage time evaluation, either None, or [] or [14, 15]
         "init_s_idx": [],
         # end species index, either None, or [] or [14, 15]
-        # "end_s_idx": None,
-        "end_s_idx": [25],
+        "end_s_idx": None,
+        # "end_s_idx": [25],
         # top n path
         "top_n_p": 100,
         # top n path for gephi to generate coordinates
