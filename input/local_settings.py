@@ -59,8 +59,8 @@ def get_local_settings():
         # condense species path, no reactions
         "species_path": False,
         # atom followed
-        # "atom_f": "C",
-        "atom_f": "HA4",
+        "atom_f": "C",
+        # "atom_f": "HA4",
         "init_s": 60,
         # "init_s": 61,
         # "init_s": 62,
