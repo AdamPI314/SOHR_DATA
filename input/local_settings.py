@@ -16,9 +16,9 @@ def get_local_settings():
         "network": {
             "merge_chatterings": "yes",
             "condense_chatterings": "yes",
-            "not_allowed_out_species": [10, 25],
+            "not_allowed_out_species": [],
             "spe_branching": 'true',
-            "terminal_sp": 'false'
+            "terminal_sp": 'true'
         },
         "propagator": {
             "primary_type": "from_file",
