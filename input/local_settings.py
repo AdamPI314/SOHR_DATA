@@ -61,9 +61,9 @@ def get_local_settings():
         # atom followed
         "atom_f": "C",
         # "atom_f": "HA4",
-        "init_s": 60,
+        # "init_s": 60,
         # "init_s": 61,
-        # "init_s": 62,
+        "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
