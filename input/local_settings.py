@@ -16,9 +16,9 @@ def get_local_settings():
         "network": {
             "merge_chatterings": "yes",
             "condense_chatterings": "yes",
-            "not_allowed_out_species": [],
-            "spe_branching": 'true',
-            "terminal_sp": 'true'
+            "not_allowed_out_species": [10],
+            "spe_branching": 'false',
+            "terminal_sp": 'false'
         },
         "propagator": {
             "primary_type": "from_file",
@@ -62,8 +62,8 @@ def get_local_settings():
         "atom_f": "C",
         # "atom_f": "HA4",
         # "init_s": 60,
-        # "init_s": 61,
-        "init_s": 62,
+        "init_s": 61,
+        # "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
