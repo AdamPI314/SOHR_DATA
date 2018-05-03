@@ -39,7 +39,7 @@
     },
     "lsode_init": {
         "dt": 2.5e-08,
-        "atol": 1e-18,
+        "atol": 1e-19,
         "rtol": 1e-16,
         "mf": 22,
         "jt": 2,
