@@ -59,7 +59,7 @@
     },
     "T": {
         "critical_temperature": 1100,
-        "end_temperature": 1900,
+        "end_temperature": 2800,
         "target_temperature": 1800
     },
     "speciation": {
