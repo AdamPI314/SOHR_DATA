@@ -28,14 +28,23 @@ def get_local_settings():
             "normalize_initial_concentration": "yes"
         },
         # trajectory max time, used to solve referene trajectory
+        # "traj_max_t": 1899.74496652704784,
+        # "traj_max_t": 58.90343239036802,
+        # "traj_max_t": 3.92474999037192074,
         "traj_max_t": 0.779074999626780951,
         # trajectory critical time, after which print out more data points
+        # "traj_critical_t": 1899.74023628405075,
+        # "traj_critical_t": 58.899497583282681,
+        # "traj_critical_t": 3.9213749903924322,
         "traj_critical_t": 0.751999999880706205,
         # reference time, to a combustion system, this is gonna be the ignition delay time
         # for Propane, time when temperature=1800K
         # "tau": 0.777655955130997,
         # time at which the first order differential/gradient of temperature is maximized
         # check routine get_time_at_time_differential_maximum from trajectory.py
+        # "tau": 1899.7449542644167,
+        # "tau": 58.90343239036802,
+        # "tau": 3.9247278234968204,
         "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
         # "mc_t": 0.01,
