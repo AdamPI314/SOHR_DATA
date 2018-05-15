@@ -16,9 +16,9 @@ def get_local_settings():
         "network": {
             "merge_chatterings": "yes",
             "condense_chatterings": "yes",
-            "not_allowed_out_species": [],
-            "spe_branching": "yes",
-            "terminal_sp": "yes"
+            "not_allowed_out_species": [10],
+            "spe_branching": "false",
+            "terminal_sp": "false"
         },
         "propagator": {
             "primary_type": "from_file",
@@ -66,13 +66,13 @@ def get_local_settings():
         #  if False, just top n pathway
         "spe_oriented": False,
         # condense species path, no reactions
-        "species_path": True,
+        "species_path": False,
         # atom followed
-        "atom_f": "C",
-        # "atom_f": "HA4",
-        # "init_s": 60,
+        # "atom_f": "C",
+        "atom_f": "HA4",
+        "init_s": 60,
         # "init_s": 61,
-        "init_s": 62,
+        # "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
@@ -101,7 +101,7 @@ def get_local_settings():
         # path integral number of trajectory
         "pi_n_traj": 10000,
         # number of time points when prepare path integral time points
-        "pi_n_time": 25,
+        "pi_n_time": 1,
         # tag, M or fraction
         "tag": "M"
     }
