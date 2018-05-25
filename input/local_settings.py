@@ -16,9 +16,9 @@ def get_local_settings():
         "network": {
             "merge_chatterings": "yes",
             "condense_chatterings": "yes",
-            "not_allowed_out_species": [10],
-            "spe_branching": "false",
-            "terminal_sp": "false"
+            "not_allowed_out_species": [],
+            "spe_branching": "yes",
+            "terminal_sp": "yes"
         },
         "propagator": {
             "primary_type": "from_file",
@@ -48,17 +48,17 @@ def get_local_settings():
         "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
         # "mc_t": 0.01,
-        # "mc_t": 0.25718313951098054,
+        "mc_t": 0.25718313951098054,
         # "mc_t": 0.5,
-        "mc_t": 0.9,
+        # "mc_t": 0.9,
         # beginning time, for pathway or for trajectory, exact time = begin_t*tau
         "begin_t": 0.0,
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
         # "end_t": 0.01,
-        # "end_t": 0.25718313951098054,
+        "end_t": 0.25718313951098054,
         # "end_t": 0.5,
-        "end_t": 0.9,
+        # "end_t": 0.9,
         # "end_t": 1e-6,
         # fix t0 or tf, default t0
         "fixed_t0_or_tf": "t0",
@@ -66,18 +66,19 @@ def get_local_settings():
         #  if False, just top n pathway
         "spe_oriented": False,
         # condense species path, no reactions
-        "species_path": False,
+        "species_path": True,
         # atom followed
-        # "atom_f": "C",
-        "atom_f": "HA4",
-        "init_s": 60,
+        "atom_f": "C",
+        # "atom_f": "HA4",
+        # "init_s": 60,
         # "init_s": 61,
-        # "init_s": 62,
+        "init_s": 62,
         # terminal species for file ./setting.json, either None, or [] or [14, 15]
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
         # examples are path_reg=None, path_reg='^S62R(736|738)', path_reg='S(25|27)', path_reg='S(39|50)'
-        "path_reg": None,
+        # "path_reg": None,
+        "path_reg": 'S14$',
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$)',
         # "path_reg": 'S(39R|39$|50R|50$|76R|76$)',
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
@@ -91,15 +92,15 @@ def get_local_settings():
         "end_s_idx": None,
         # "end_s_idx": [25],
         # top n path
-        "top_n_p": 100,
+        "top_n_p": 25,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
         "top_n_s": 5,
         # number of trajectory used to generate pathway list running mc simulation
-        "mc_n_traj": 1e8,
+        "mc_n_traj": 1e7,
         # path integral number of trajectory
-        "pi_n_traj": 10000,
+        "pi_n_traj": 100,
         # number of time points when prepare path integral time points
         "pi_n_time": 1,
         # tag, M or fraction
