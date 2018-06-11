@@ -57,9 +57,9 @@ def get_local_settings():
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
         # "end_t": 0.01,
-        "end_t": 0.25718313951098054,
+        # "end_t": 0.25718313951098054,
         # "end_t": 0.5,
-        # "end_t": 0.9,
+        "end_t": 0.9,
         # "end_t": 1e-6,
         # fix t0 or tf, default t0
         "fixed_t0_or_tf": "t0",
