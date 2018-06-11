@@ -48,7 +48,8 @@ def get_local_settings():
         "tau": 0.777660157519,
         # time at which using MC to generate pathway list, time=mc_t*tau
         # "mc_t": 0.01,
-        "mc_t": 0.25718313951098054,
+        "mc_t": 0.1,
+        # "mc_t": 0.25718313951098054,
         # "mc_t": 0.5,
         # "mc_t": 0.9,
         # beginning time, for pathway or for trajectory, exact time = begin_t*tau
@@ -66,7 +67,7 @@ def get_local_settings():
         #  if False, just top n pathway
         "spe_oriented": False,
         # condense species path, no reactions
-        "species_path": True,
+        "species_path": False,
         # atom followed
         "atom_f": "C",
         # "atom_f": "HA4",
