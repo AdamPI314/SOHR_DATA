@@ -77,8 +77,8 @@ def get_local_settings():
         "terminal_spe": [],
         # regular expression used to filter pathway when preparing candidate pathways, pandas, str.contains(path_reg)
         # examples are path_reg=None, path_reg='^S62R(736|738)', path_reg='S(25|27)', path_reg='S(39|50)'
-        # "path_reg": None,
-        "path_reg": 'S14$',
+        "path_reg": None,
+        # "path_reg": 'S14$',
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$)',
         # "path_reg": 'S(39R|39$|50R|50$|76R|76$)',
         # "path_reg": 'S(25R|25$|27R|27$|77R|77$|39R|39$|50R|50$|76R|76$)',
@@ -92,7 +92,7 @@ def get_local_settings():
         "end_s_idx": None,
         # "end_s_idx": [25],
         # top n path
-        "top_n_p": 25,
+        "top_n_p": 11,
         # top n path for gephi to generate coordinates
         "top_n_p_gephi": 500,
         # top n species
@@ -102,7 +102,7 @@ def get_local_settings():
         # path integral number of trajectory
         "pi_n_traj": 100,
         # number of time points when prepare path integral time points
-        "pi_n_time": 1,
+        "pi_n_time": 25,
         # tag, M or fraction
         "tag": "M"
     }
