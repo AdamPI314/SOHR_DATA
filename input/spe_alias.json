@@ -1,5 +1,19 @@
 {
-	"well_1": "O2QOOH_1",
-	"prod_1": "OQ'OOH_1",
-	"frag_1": "OQ'O_1"
+	"C3H8": "RH",   
+	"npropyloxy": "nRO",
+	"npropylooh": "nROOH",
+	"npropyloo": "nROO",
+	"npropyl": "nR",       
+	"ipropyloxy": "iRO",
+	"ipropylooh": "iROOH",
+	"ipropyloo": "iROO",
+	"ipropyl": "iR",  
+	"QOOH_1": "QOOH1",	
+	"well_1": "O2QOOH1",
+	"prod_1": "OQ'OOH1",
+	"frag_1": "OQ'O1",
+	"CH3": "CH3",
+	"CH3OO": "CH3OO",
+	"C2H5": "C2H5",
+	"CH3CH2OO": "CH3CH2OO"
 }
