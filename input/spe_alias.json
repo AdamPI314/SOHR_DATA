@@ -18,5 +18,8 @@
 	"CH3CH2OO": "CH3CH2OO",
 	"OH": "OH",
 	"vinoxy": "vinoxy",
-	"CO": "CO"
+	"CO": "CO",
+	"C3H6": "C3H6",
+	"CH2O": "CH2O",
+	"HO2": "HO2"
 }
