@@ -56,10 +56,9 @@ def get_local_settings():
         # end time, for pathway or for trajectory, exact time = end_t*tau
         # here 0.25718313951098054 is actually 0.2 seconds
         # "end_t": 0.01,
-        "end_t": 0.1,
         # "end_t": 0.25718313951098054,
         # "end_t": 0.5,
-        # "end_t": 0.9,
+        "end_t": 0.9,
         # "end_t": 1e-6,
         # fix t0 or tf, default t0
         "fixed_t0_or_tf": "t0",
@@ -102,7 +101,7 @@ def get_local_settings():
         # number of trajectory used to generate pathway list running mc simulation
         "mc_n_traj": 1e8,
         # path integral number of trajectory
-        "pi_n_traj": 10000,
+        "pi_n_traj": 100,
         # number of time points when prepare path integral time points
         "pi_n_time": 1,
         # tag, M or fraction
